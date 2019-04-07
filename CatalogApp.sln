@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogApp", "CatalogApp\CatalogApp.csproj", "{C606F112-87CD-4CE0-B568-0140D6B4BAAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C606F112-87CD-4CE0-B568-0140D6B4BAAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C606F112-87CD-4CE0-B568-0140D6B4BAAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C606F112-87CD-4CE0-B568-0140D6B4BAAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C606F112-87CD-4CE0-B568-0140D6B4BAAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E0F20CE8-E764-4F86-A87A-19A1B749D12B}
+	EndGlobalSection
+EndGlobal

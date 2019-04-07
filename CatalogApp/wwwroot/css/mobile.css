@@ -1,0 +1,34 @@
+@media only screen and (max-width: 650px) {
+    .flip-card{
+        margin:  auto;
+        width: 100px;
+        height: 100px;
+    }
+
+    li {
+        color: white;
+        text-align: center;
+        width: 100%;
+        padding: 0px 0px;
+        text-decoration: none;
+      }
+
+
+    .center{
+        margin: auto;
+        width: 50%;
+        vertical-align: middle;
+
+    }
+
+    .card-wrapper{
+        margin: auto;
+        padding:0;
+    }
+
+  }
+
+
+  @media only screen and (max-width: 1500px) {
+
+  }
