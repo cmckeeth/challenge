@@ -28,24 +28,24 @@ namespace CatalogApp.Controllers
 
         [HttpPost]
         [Route("removeItem")]
-        public ActionResult RemoveItem([FromBody] Item item)
+        public ActionResult RemoveItem([FromBody]Item item)
         {
-            if (!itemExists(item))
+            if (!itemExists(item.Name))
             {
                 return new BadRequestResult();
             }
             else
             {
-                return RemoveItemFromMemory(item);
+                return RemoveItemFromMemory(item.Name);
             }
         }
-        public ActionResult RemoveItemFromMemory(Item item)
+        public ActionResult RemoveItemFromMemory(string name)
         {
             var temp = Items.Count();
 
             foreach (Item x in Items)
             {
-                if (x.Name == item.Name)
+                if (x.Name == name)
                 {
                     Items.Remove(x);
                 }
@@ -94,11 +94,11 @@ namespace CatalogApp.Controllers
         /// </summary>
         /// <param name="item"></param>
         /// <returns></returns>
-        public bool itemExists(Item item)
+        public bool itemExists(string name)
         {
             foreach (Item i in Items)
             {
-                if (i.Name == item.Name)
+                if (i.Name == name)
                     return true;                
             }
             return false;

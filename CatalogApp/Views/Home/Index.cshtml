@@ -1,9 +1,33 @@
 ﻿<!DOCTYPE HTML>
 <html>
 <body>
-    <div class="center">
 
-        <div class="card-wrapper">
+    <div id="main" class="center">
+        <div class="box" id="addBox" style="display:none;">
+            <h3>Add Item</h3>
+            <input class="boxInputs" id="itemName" type="text" placeholder="Item Name"><br>
+            <input class="boxInputs" id="itemDesc" type="text" placeholder="Description"><br>
+            <input class="boxInputs" id="itemPrice" type="text" placeholder="Price" /><br>
+            <input class="boxInputs" id="itemImgPath" type="text" placeholder="Image Path" /><br>
+            <button class="button1" onclick="
+    addItem(
+        document.getElementById('itemName').value,        
+        document.getElementById('itemDesc').value,
+        document.getElementById('itemPrice').value,
+        document.getElementById('itemImgPath').value
+    )">Confirm</button>
+            <button class="button2" onclick="addBoxToggle()">Cancel</button>
+
+        </div>
+        <div class="box" id="removeBox" style="display:none;">
+            <h3>Remove Item</h3>
+            <input class="boxInputs" id="removeName" type="text" placeholder="Item Name"><br>
+            <button class="button1" onclick="removeItem(document.getElementById('removeName').value)">Confirm</button>
+            <button class="button2" onclick="removeBoxToggle()">Cancel</button>
+        </div>
+
+
+        @*<div class="card-wrapper">
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
@@ -15,72 +39,9 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-
-        <div class="card-wrapper">
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img class="prod-image" src="images/generic-prod.png" alt="Product Photo" />
-                    </div>
-                    <div class="flip-card-back">
-                        <h1>Product Details</h1>
-                        <p>Price</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="card-wrapper">
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img class="prod-image" src="images/generic-prod.png" alt="Product Photo" />
-                    </div>
-                    <div class="flip-card-back">
-                        <h1>Product Details</h1>
-                        <p>Price</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="card-wrapper">
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img class="prod-image" src="images/generic-prod.png" alt="Product Photo" />
-                    </div>
-                    <div class="flip-card-back">
-                        <h1>Product Details</h1>
-                        <p>Price</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="card-wrapper">
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img class="prod-image" src="images/generic-prod.png" alt="Product Photo" />
-                    </div>
-                    <div class="flip-card-back">
-                        <h1>Product Details</h1>
-                        <p>Price</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
+        </div>*@
 
     </div>
-
 </body>
 </html>
 

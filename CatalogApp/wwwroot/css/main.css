@@ -1,7 +1,6 @@
 body{
   background-color:lightgray
 }
-
 button {
     width: 8rem;
     background-color: grey; /* Green */
@@ -18,6 +17,7 @@ button {
     transition-duration: 0.2s;
     cursor: pointer;
 }
+
 .button1:hover {
     background-color: green;
     transition-duration: 1s;

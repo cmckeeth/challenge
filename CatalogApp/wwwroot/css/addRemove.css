@@ -1,0 +1,29 @@
+﻿#addBox {
+    display: none;    
+}
+
+
+#removeBox {
+    display: none;
+}
+
+.box {
+    position: absolute;
+    width: 20em;
+    top: 12em;
+    left: 12em;
+    border: 2px solid white;
+    margin: auto;
+    padding:0 1em 1em 1em;
+    text-align: center;
+    background: #cfcfcf;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    z-index: 99;
+}
+
+.boxInputs {
+    display:table;
+    float:none;
+    margin:.3em;
+}
