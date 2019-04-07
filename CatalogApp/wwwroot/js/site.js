@@ -10,7 +10,7 @@ function displayItems() {
 
 //async functions
 function getItems() {
-    var url = baseUrl + "/items";    
+    var url = baseUrl + "/items";
 
     return items;
 }
