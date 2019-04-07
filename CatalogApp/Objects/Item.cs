@@ -11,5 +11,14 @@ namespace CatalogApp.Objects
         public string Description { get; set; }
         public double Price { get; set; }
         public string ImagePath { get; set; }
+
+        public Item(String name, String description, double price, String imgPath)
+        {
+            Name = name;
+            Description = description;
+            Price = price;
+            ImagePath = imgPath;
+        }
+
     }
 }
